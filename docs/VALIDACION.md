@@ -5,6 +5,8 @@ Comprobaciones locales realizadas el 11 de noviembre de 2026 con Python 3.12 en 
 | Comprobación | Resultado |
 |---|---|
 | Suite pytest | 32 pruebas aprobadas |
+| Entorno virtual nuevo | Dependencias instaladas desde requirements.txt y 32 pruebas aprobadas sin PYTHONPATH externo |
+| Descarga desde cero | Versión 2 descargada y SHA-256 verificado en carpeta temporal |
 | Fuente completa | 3.900 registros y monto acumulado USD 233.081 |
 | Segunda carga | 3.900 registros, sin acumulación de duplicados |
 | Filtro Ropa e Invierno | 448 registros y monto acumulado USD 27.274 |

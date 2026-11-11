@@ -31,6 +31,8 @@ Sin filtros: **3.900 registros**, **USD 233.081,00**, compra promedio **USD 59,7
 Ropa (`Clothing`) en invierno (`Winter`): **448 registros** y **USD 27.274,00**.
 Las cifras describen la muestra sintética. No son ventas ni clientes de Hola Moda.
 
+![Vista del tablero](docs/tablero-escritorio.png)
+
 ## Arquitectura
 
 ```mermaid
