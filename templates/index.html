@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tendencias de compra · HolaModa</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+  <script defer src="{{ url_for('static', filename='vendor/chart.umd.js') }}"></script>
+  <script defer src="{{ url_for('static', filename='app.js') }}"></script>
+</head>
+<body>
+  <header><a class="wordmark" href="/">HOLA<span>MODA</span><small>RETAIL ANALYTICS</small></a><nav aria-label="Principal"><a class="active" href="/">Tendencias</a><a href="/docs">Documentación API ↗</a></nav><span class="demo">PRUEBA TÉCNICA</span></header>
+  <main>
+    <div class="intro"><div><p class="eyebrow">ANÁLISIS COMERCIAL / MUESTRA DE CLIENTES</p><h1>Tendencias de compra</h1><p class="subtitle">Explora categorías, temporadas y preferencias de compra.</p></div><div class="source">FUENTE<span>Kaggle · Customer Shopping Trends</span><small>Datos sintéticos · USD · Sin fechas de transacción</small></div></div>
+    <form id="filters" class="filters" aria-label="Filtros del tablero">
+      <label>Categoría<select id="category" name="category"><option value="">Todas las categorías</option></select></label>
+      <label>Temporada<select id="season" name="season"><option value="">Todas las temporadas</option></select></label>
+      <label>Género<select id="gender" name="gender"><option value="">Todos</option></select></label>
+      <label>Descuento<select name="discounted"><option value="">Todos</option><option value="1">Con descuento</option><option value="0">Sin descuento</option></select></label>
+      <button type="reset" class="secondary">Restablecer filtros</button>
+    </form>
+    <div id="status" role="status" aria-live="polite">Cargando datos…</div>
+    <div id="error" role="alert" hidden></div><button id="retry" class="secondary" hidden>Reintentar</button>
+    <section class="metrics" aria-label="Indicadores de la selección">
+      <article><p>Registros analizados</p><strong id="records">—</strong><small>Una observación por cliente</small></article>
+      <article><p>Monto de compra acumulado</p><strong id="total">—</strong><small>Importes de la muestra · USD</small></article>
+      <article><p>Compra promedio</p><strong id="average">—</strong><small>Monto acumulado / registros</small></article>
+      <article><p>Calificación promedio</p><strong id="rating">—</strong><small>Escala de 0 a 5</small></article>
+    </section>
+    <section class="charts" aria-label="Visualizaciones">
+      <article class="panel wide"><div class="panel-title"><div><p class="eyebrow">COMPOSICIÓN DE LA MUESTRA</p><h2>Monto por categoría</h2></div><span>USD</span></div><div class="canvas"><canvas id="categories" role="img" aria-label="Monto de compra por categoría"></canvas></div><details><summary>Ver datos del gráfico</summary><div id="categories-data"></div></details></article>
+      <article class="panel"><div class="panel-title"><div><p class="eyebrow">DISTRIBUCIÓN</p><h2>Compras por temporada</h2></div></div><div class="canvas"><canvas id="seasons" role="img" aria-label="Registros por temporada"></canvas></div><details><summary>Ver datos del gráfico</summary><div id="seasons-data"></div></details></article>
+      <article class="panel wide"><div class="panel-title"><div><p class="eyebrow">PRODUCTOS</p><h2>Los 10 con mayor monto</h2></div><span>USD</span></div><div class="canvas"><canvas id="items" role="img" aria-label="Diez productos con mayor monto de compra"></canvas></div><details><summary>Ver datos del gráfico</summary><div id="items-data"></div></details></article>
+      <article class="panel notes"><p class="eyebrow">LECTURA DE LOS DATOS</p><h2>Un alcance definido</h2><p>Esta muestra permite comparar preferencias e importes de compra. Cada cliente tiene una observación.</p><p>Las temporadas son categorías, no una serie de tiempo. No hay costos ni existencias para calcular margen o recomendar reabastecimiento.</p><p class="note">Ejercicio de integración con datos sintéticos. No representa operaciones de Hola Moda.</p></article>
+    </section>
+    <section class="panel purchases"><div class="panel-title"><div><p class="eyebrow">TRAZABILIDAD</p><h2>Detalle de la selección</h2></div><span id="table-count"></span></div><div class="table-wrap"><table><caption class="sr-only">Registros de compra filtrados</caption><thead><tr><th scope="col">Cliente</th><th scope="col">Producto</th><th scope="col">Categoría</th><th scope="col">Temporada</th><th scope="col">Descuento</th><th scope="col" class="numeric">Monto USD</th></tr></thead><tbody id="rows"></tbody></table></div><div class="pagination"><button id="prev" class="secondary" disabled>← Anterior</button><span id="page-label"></span><button id="next" class="secondary" disabled>Siguiente →</button></div></section>
+    <footer><div><strong>Estado del pipeline</strong><p id="pipeline">Consultando última carga…</p></div><a href="https://www.kaggle.com/datasets/iamsouravbanerjee/customer-shopping-trends-dataset" target="_blank" rel="noopener noreferrer">Fuente y descripción del dataset ↗</a></footer>
+  </main>
+</body></html>

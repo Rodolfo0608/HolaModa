@@ -1,0 +1,12 @@
+{
+  "title": "Customer Shopping Trends Dataset",
+  "author": "Sourav Banerjee",
+  "url": "https://www.kaggle.com/datasets/iamsouravbanerjee/customer-shopping-trends-dataset",
+  "version": 2,
+  "file": "shopping_trends.csv",
+  "rows": 3900,
+  "sha256": "33b5880325da80f719b1f168b14bd20faa868121352c18e97680ee9f20db92f4",
+  "synthetic": true,
+  "license_label": "Other (specified in description)",
+  "retrieved_on": "2026-11-11"
+}

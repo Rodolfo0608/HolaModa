@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Archivos locales de esta prueba
+instance/
+data/raw/*.csv
+data/raw/*.zip
+*.log
