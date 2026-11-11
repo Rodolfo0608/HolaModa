@@ -24,3 +24,11 @@ La ejecución de GitHub Actions se comprueba por separado tras publicar.
 Se incorporaron Dockerfile, Compose, servidor Waitress e instrucciones de traslado de imagen.
 Docker no está instalado en este equipo: no se ha construido ni ejecutado el contenedor.
 La validación nativa anterior se mantiene separada de esta opción pendiente de prueba.
+
+## Revisión adicional de cumplimiento
+
+El 11 de noviembre de 2026 se repitió la suite: 32 pruebas aprobadas.
+El script `scripts/verify_delivery.py` aprobó 42 cotejos del CSV, SQLite y HTTP.
+Se incluyen mediciones secuenciales de tres endpoints en `RESULTADO_COTEJO.json`.
+La correspondencia de cada requisito está en `MATRIZ_CUMPLIMIENTO.md`.
+El remoto de GitHub consultado seguía en el commit inicial 4ee5159; publicación y Actions pendientes.

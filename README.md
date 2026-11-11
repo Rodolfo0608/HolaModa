@@ -147,6 +147,9 @@ Para operación pública se requerirían HTTPS, servidor WSGI, controles de acce
 
 ## Documentación
 
+- [Cómo arrancar el servidor y dónde están los archivos](docs/ARRANQUE_LOCAL.md)
+- [Matriz punto por punto de la prueba técnica](docs/MATRIZ_CUMPLIMIENTO.md)
+- [Frontend y herramientas utilizadas](docs/FRONTEND.md)
 - [Documento técnico](docs/TECNICO.md)
 - [Guía paso a paso](docs/GUIA_PASO_A_PASO.md)
 - [Sustentación y demostración](docs/SUSTENTACION.md)
