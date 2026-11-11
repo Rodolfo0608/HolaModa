@@ -103,7 +103,9 @@ El registro de comprobaciones está en `VALIDACION.md`.
 PostgreSQL resulta más adecuado para múltiples escritores y una operación compartida, pero añade instalación
 y administración. React puede ser útil para una interfaz compleja, pero este tablero no requiere otra cadena de compilación.
 Pandas simplifica transformaciones tabulares extensas; aquí `csv`, `Decimal` y SQLite cubren el proceso de forma explícita.
-Docker facilitaría empaquetado uniforme una vez probado, y no es obligatorio en el enunciado.
+Se añadió una alternativa Docker con Waitress, imagen sin privilegios de root y volumen de SQLite.
+La construcción y ejecución de esa alternativa están pendientes de prueba. No es obligatoria en el enunciado.
+Las instrucciones y limitaciones están en `DOCKER.md`.
 
 ## Evolución
 

@@ -1,0 +1,13 @@
+.git
+.github
+.venv
+__pycache__
+**/__pycache__
+.pytest_cache
+instance
+data/raw
+docs
+.env
+*.log
+*.zip
+*.tar

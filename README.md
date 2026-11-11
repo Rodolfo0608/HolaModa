@@ -25,6 +25,19 @@ No hace falta activar el entorno ni cambiar políticas de PowerShell.
 Si se descarga el proyecto como ZIP, extraerlo y comenzar desde el comando de creación de `.venv`.
 En Linux/macOS: usar `python3.12 -m venv .venv` y sustituir el ejecutable de Windows por `.venv/bin/python`.
 
+## Opción con Docker
+
+Se incluyen `Dockerfile` y `compose.yaml` como alternativa a la instalación de Python en el anfitrión.
+Requiere Docker y Compose en ejecución. Consultar [preparación, traslado y comprobaciones](docs/DOCKER.md).
+**La variante Docker está pendiente de construcción y prueba**, porque Docker no está instalado aquí.
+
+```powershell
+docker compose up --build -d
+```
+
+El tablero de esta modalidad utiliza http://127.0.0.1:5001. La construcción requiere internet;
+después puede ejecutarse sin conexión con la imagen ya preparada.
+
 ## Resultados de referencia
 
 Sin filtros: **3.900 registros**, **USD 233.081,00**, compra promedio **USD 59,76** y calificación **3,75 / 5**.
@@ -118,7 +131,7 @@ Swagger permite consultar el esquema y ejecutar ejemplos reales desde el navegad
 | JavaScript y CSS propios | Consumo directo de la API sin proceso de compilación |
 | Chart.js y Swagger locales | Demostración sin depender de CDN |
 | Carga completa | Consistencia de una fuente estática; no es una integración incremental de POS |
-| Sin Docker | Se prioriza ejecución local comprobable; contenedores como mejora de empaquetado |
+| Docker opcional | Empaquetado preparado con Waitress; construcción y ejecución pendientes de prueba |
 
 ## Calidad y seguridad
 

@@ -1,0 +1,14 @@
+services:
+  web:
+    image: holamoda-retail:local
+    build:
+      context: .
+    ports:
+      - "127.0.0.1:5001:5000"
+    volumes:
+      - retail_data:/app/instance
+    restart: unless-stopped
+    init: true
+
+volumes:
+  retail_data:

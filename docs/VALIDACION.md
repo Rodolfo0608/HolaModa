@@ -18,3 +18,9 @@ Comprobaciones locales realizadas el 11 de noviembre de 2026 con Python 3.12 en 
 Las pruebas automatizadas utilizan muestras pequeñas independientes. Las cifras completas se contrastaron
 con el CSV original. Esta validación no equivale a una prueba de carga ni a una auditoría de seguridad.
 La ejecución de GitHub Actions se comprueba por separado tras publicar.
+
+## Variante Docker
+
+Se incorporaron Dockerfile, Compose, servidor Waitress e instrucciones de traslado de imagen.
+Docker no está instalado en este equipo: no se ha construido ni ejecutado el contenedor.
+La validación nativa anterior se mantiene separada de esta opción pendiente de prueba.

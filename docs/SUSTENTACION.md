@@ -68,8 +68,9 @@ y reglas de negocio validadas.
 **¿Se exponen los errores SQL?** El servidor los registra y entrega un error controlado al cliente.
 Los valores del filtro van como parámetros y las columnas se limitan a opciones permitidas.
 
-**¿Por qué no Docker?** El enunciado lo incentiva. Se priorizó una ejecución local comprobada con entorno virtual
-y dependencias fijadas. Contenedores serían una mejora posterior, probada antes de presentarla.
+**¿Incluye Docker?** Hay una alternativa de empaquetado con Docker y Compose, documentada en `DOCKER.md`.
+Se priorizó la ejecución nativa comprobada. Antes de presentar Docker como funcional se debe construir
+y probar la imagen. Describir el estado de verificación real al momento de la entrevista.
 
 **¿Qué mejorarías primero?** Depende del uso: para operación compartida, acceso por roles y PostgreSQL;
 para más datos, staging y procesamiento por lotes; para integración continua de POS, claves y carga incremental.
