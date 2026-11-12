@@ -75,7 +75,7 @@ Otra persona los reconstruye siguiendo el README. No faltan fuentes por excluir 
 | Arquitectura de la solución | README y `TECNICO.md`: responsabilidades de descarga, ETL, base, API y navegador | Documentado |
 | Decisiones y justificación | Tabla del README y alternativas evaluadas en `TECNICO.md` | Documentado: Flask, SQLite, csv/Decimal, frontend sin compilación y carga completa |
 | Diagrama del flujo de datos | Diagrama Mermaid en README y flujo de validación/carga en `TECNICO.md` | Documentado. GitHub renderiza Mermaid; en un editor de texto se verá su código |
-| Explicación del ETL | README, `TECNICO.md`, `GUIA_PASO_A_PASO.md` y comentarios de procesos en el código | Documentado y apoyado por tests |
+| Explicación del ETL | README, `TECNICO.md` y comentarios de procesos en el código | Documentado y apoyado por tests |
 
 El enunciado permite colocar la documentación en el README. No exige Word o PDF ni un formato específico.
 
@@ -83,9 +83,9 @@ El enunciado permite colocar la documentación en el README. No exige Word o PDF
 
 | Punto del documento | Material disponible | Estado y siguiente acción |
 |---|---|---|
-| Explicar el enfoque | PowerPoint, diapositivas de alcance, arquitectura y decisiones; `SUSTENTACION.md` | Preparado; ensayar con palabras propias |
-| Desafíos y soluciones | Guion: límites de la fuente, precisión monetaria, recargas y recursos locales; notas del PowerPoint | Preparado; explicar un ejemplo de cada decisión, sin inventar incidentes |
-| Demostración del funcionamiento | Aplicación local y secuencia documentada en `SUSTENTACION.md` | Funcionamiento verificado. Falta que el candidato practique y complete la demostración presencial |
+| Explicar el enfoque | PowerPoint, diapositivas de alcance, arquitectura y decisiones | Preparado; ensayar con palabras propias |
+| Desafíos y soluciones | Límites de la fuente, precisión monetaria, recargas y recursos locales; notas del PowerPoint | Preparado; explicar un ejemplo de cada decisión, sin inventar incidentes |
+| Demostración del funcionamiento | Aplicación local y diapositiva de demostración | Funcionamiento verificado. Falta que el candidato practique y complete la demostración presencial |
 | Mejoras o escalabilidad | Diapositiva final y secciones de evolución en README y documento técnico | Documentado; distinguir posibilidades futuras de funciones ya implementadas |
 
 ## Criterios de evaluación y evidencias
@@ -100,7 +100,7 @@ El enunciado permite colocar la documentación en el README. No exige Word o PDF
 | Funcionalidad, 25%: requerimientos y datos | Cotejo funcional anterior y 42 comprobaciones adicionales del CSV, SQLite y HTTP | Comprobación sobre la muestra seleccionada, no sobre toda fuente posible |
 | Funcionalidad: performance | Medición HTTP local, tres endpoints, diez peticiones secuenciales por endpoint | Sin concurrencia ni millones de filas. El enunciado no fija un SLA; no se garantiza capacidad productiva |
 | Documentación y presentación, 20%: claridad y calidad | README, documento técnico, guía, matriz, frontend y PowerPoint | Material preparado; la calidad comunicativa necesita revisión y ensayo |
-| Documentación y presentación: explicación y preguntas | Guion y preguntas con respuestas razonadas | Pendiente de práctica del candidato y sustentación presencial |
+| Documentación y presentación: explicación y preguntas | Documento técnico, código y notas de la presentación | Pendiente de práctica del candidato y sustentación presencial |
 
 ## Recomendaciones y notas importantes
 
@@ -137,7 +137,7 @@ No miden tiempo de dibujado del navegador ni acceso por internet. Dependen del e
 1. Publicación comprobada en `Rodolfo0608/HolaModa`, commit 4365e6c.
 2. Fuentes, README y carpeta docs comprobados mediante la API pública de GitHub.
 3. Actions finalizó satisfactoriamente para ese commit. Consultar el resultado correspondiente si se publican cambios posteriores.
-4. Recorrer el guion con el candidato: arranque, cifras, filtros, Swagger, prueba y decisiones.
+4. Practicar arranque, cifras, filtros, Swagger, prueba y decisiones.
 5. Confirmar la modalidad de demostración con la empresa y probar el equipo que se llevará.
 6. Si se decide mostrar Docker, construir y probar esa variante antes de presentarla como funcional.
 

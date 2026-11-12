@@ -44,7 +44,7 @@ Documento principal: [Diseño técnico de la solución](TECNICO.md).
 | Arquitectura | Responsabilidades y modelo en [TECNICO.md](TECNICO.md); diagrama general en [README](../README.md) |
 | Decisiones y justificación | Alternativas evaluadas en [TECNICO.md](TECNICO.md); tabla de decisiones en [README](../README.md) |
 | Diagrama del flujo de datos | Flujo general en [README](../README.md); validación y transacción en [TECNICO.md](TECNICO.md) |
-| Explicación ETL | Proceso y consistencia en [TECNICO.md](TECNICO.md); recorrido didáctico en [GUIA_PASO_A_PASO.md](GUIA_PASO_A_PASO.md) |
+| Explicación ETL | Proceso y consistencia en [TECNICO.md](TECNICO.md) y explicación del [README](../README.md) |
 
 Documentos de apoyo:
 
@@ -60,15 +60,13 @@ Documentos de apoyo:
 ## 3 Presentación técnica
 
 Presentación editable: [Sustentacion_HolaModa.pptx](Sustentacion_HolaModa.pptx).
-Guion y preguntas: [SUSTENTACION.md](SUSTENTACION.md).
 
 | Contenido solicitado | Material de revisión |
 |---|---|
-| Enfoque utilizado | Diapositivas 1 a 5 y apertura del guion |
-| Desafíos y soluciones | Proceso de validación, decisiones y notas del PowerPoint; apartado de desafíos del guion |
-| Demostración del funcionamiento | Diapositiva 6, secuencia del guion y aplicación local |
+| Enfoque utilizado | Diapositivas 1 a 5 |
+| Desafíos y soluciones | Proceso de validación, decisiones y notas del PowerPoint |
+| Demostración del funcionamiento | Diapositiva 6 y aplicación local |
 | Mejoras o escalabilidad | Diapositiva 8 y evolución del documento técnico |
-| Preguntas técnicas | Apartado de preguntas para practicar en el guion |
 
 El PowerPoint incluye notas del presentador. El archivo descargado debe abrirse con PowerPoint u otra
 aplicación compatible; GitHub puede ofrecer descarga en lugar de previsualización.
