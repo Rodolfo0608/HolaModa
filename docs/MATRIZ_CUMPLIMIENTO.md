@@ -6,8 +6,9 @@ La implementación nativa cubre el flujo funcional solicitado: extracción de un
 transformación y carga en una base SQL, API REST documentada y aplicación web que consume esa API.
 Existen fuentes versionadas localmente, instrucciones de ejecución, documento técnico, diagramas y presentación.
 
-No se debe afirmar que la entrega está cerrada: la revisión remota del 11 de noviembre de 2026 encontró
-solo el commit inicial en GitHub. Falta publicar el desarrollo y comprobar la ejecución de Actions.
+El 11 de noviembre de 2026 se confirmó la publicación de fuentes y documentos en GitHub, commit `4365e6c`.
+La validación de GitHub Actions para ese commit terminó satisfactoriamente:
+https://github.com/Rodolfo0608/HolaModa/actions/runs/43130980826
 La capacidad de explicación y las respuestas técnicas requieren ensayo con el candidato y evaluación presencial.
 Esta matriz demuestra evidencias de implementación, no garantiza una calificación de la empresa.
 
@@ -59,9 +60,9 @@ Bootstrap, React y jQuery no son dependencias de esta implementación.
 
 | Punto del documento | Ubicación | Estado |
 |---|---|---|
-| Repositorio Git con código ETL | `retail/etl.py`, `scripts/download_data.py` | Verificado localmente. Publicación remota pendiente |
-| Código de API | `app.py`, `retail/db.py`, `retail/openapi.py` | Verificado localmente. Publicación remota pendiente |
-| Código frontend | `templates/`, `static/app.js`, `static/app.css` y bibliotecas locales | Verificado localmente. Publicación remota pendiente |
+| Repositorio Git con código ETL | `retail/etl.py`, `scripts/download_data.py` | Verificado localmente y publicado en GitHub |
+| Código de API | `app.py`, `retail/db.py`, `retail/openapi.py` | Verificado localmente y publicado en GitHub |
+| Código frontend | `templates/`, `static/app.js`, `static/app.css` y bibliotecas locales | Verificado localmente y publicado en GitHub |
 | README de instalación y ejecución | `README.md`, comandos nativos desde una carpeta nueva | Documentado y comprobado en entorno virtual nuevo durante la preparación |
 
 La base, el CSV descargado y `.venv` son archivos generados locales excluidos de Git.
@@ -111,7 +112,7 @@ El enunciado permite colocar la documentación en el README. No exige Word o PDF
 | Logging y errores | Logging del ETL y peticiones, excepciones de API en consola y respuestas controladas. No hay plataforma centralizada de logs |
 | Fácil ejecución local | `.venv`, requirements fijado, instrucciones y `Abrir_tablero.cmd`; no requiere IIS |
 | Docker/contenedores | Opcional, solo incentivado. Archivos preparados y prueba pendiente. No cuenta como comprobación de ejecución nativa |
-| Código versionado en Git | Historial local de commits existente. Publicar en GitHub sigue pendiente |
+| Código versionado en Git | Historial y fuentes publicados en GitHub; Actions satisfactorio para el commit 4365e6c |
 | Documentación en README permitida | Se utiliza README como punto de entrada y docs como ampliación |
 
 ## Resultados observados del cotejo nativo
@@ -131,11 +132,11 @@ Los resultados concretos y la hora de ejecución están en `RESULTADO_COTEJO.jso
 Las mediciones incluyen ida y vuelta HTTP local con urllib y el servidor de desarrollo.
 No miden tiempo de dibujado del navegador ni acceso por internet. Dependen del equipo y de su actividad.
 
-## Acciones que faltan antes de enviar o sustentar
+## Cierre de publicación y preparación de la sustentación
 
-1. Publicar los commits locales en `Rodolfo0608/HolaModa`. El remoto consultado aún tenía solo `4ee5159`.
-2. Abrir GitHub y comprobar que se ven código, README, documentación y presentación.
-3. Revisar el resultado de Actions; no afirmar que pasó si todavía no terminó correctamente.
+1. Publicación comprobada en `Rodolfo0608/HolaModa`, commit 4365e6c.
+2. Fuentes, README y carpeta docs comprobados mediante la API pública de GitHub.
+3. Actions finalizó satisfactoriamente para ese commit. Consultar el resultado correspondiente si se publican cambios posteriores.
 4. Recorrer el guion con el candidato: arranque, cifras, filtros, Swagger, prueba y decisiones.
 5. Confirmar la modalidad de demostración con la empresa y probar el equipo que se llevará.
 6. Si se decide mostrar Docker, construir y probar esa variante antes de presentarla como funcional.

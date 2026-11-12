@@ -6,9 +6,10 @@ La ejecución nativa fue comprobada y la última suite local aprobó sus 32 caso
 El cotejo de datos dejó 42 comprobaciones aprobadas en `RESULTADO_COTEJO.json`.
 La documentación y la presentación están preparadas.
 
-**Pendiente de cierre:** publicar el historial local en GitHub y revisar Actions.
-La consulta remota realizada el 11 de noviembre de 2026 todavía mostraba únicamente el commit inicial `4ee5159`.
-Actualizar esa comprobación después de publicar. No enviar el enlace como entrega completa mientras falten las fuentes en GitHub.
+**Publicación comprobada:** el 11 de noviembre de 2026 se verificaron las fuentes y documentos en GitHub,
+en el commit `4365e6c`. GitHub Actions completó satisfactoriamente la validación de ese commit.
+Resultado: https://github.com/Rodolfo0608/HolaModa/actions/runs/43130980826
+Para revisiones posteriores, consultar el estado del commit correspondiente en Actions.
 
 Repositorio de entrega: https://github.com/Rodolfo0608/HolaModa
 
@@ -93,7 +94,7 @@ El detalle de cada subcriterio y sus límites se encuentra en la matriz de cumpl
   cabeceras de seguridad y servidor nativo escuchando solo en loopback.
 - Logging y manejo de errores: consola del ETL y del servidor, errores controlados de API y mensajes en interfaz.
 - Ejecución local sencilla: entorno virtual, dependencias fijadas, README y Abrir_tablero.cmd.
-- Versionado: historial Git local existente; publicación remota pendiente.
+- Versionado: historial Git y fuentes publicados; validación remota satisfactoria del commit 4365e6c.
 - Docker: alternativa opcional preparada, todavía sin construcción ni ejecución comprobada.
 
 ## Enlaces de la demostración local
