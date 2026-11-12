@@ -152,7 +152,7 @@ Para operación pública se requerirían HTTPS, servidor WSGI, controles de acce
 - [Matriz punto por punto de la prueba técnica](docs/MATRIZ_CUMPLIMIENTO.md)
 - [Frontend y herramientas utilizadas](docs/FRONTEND.md)
 - [Documento técnico](docs/TECNICO.md)
-- [Presentación PowerPoint de ocho diapositivas](docs/Sustentacion_HolaModa.pptx)
+- [Presentación PowerPoint de ocho diapositivas](docs/Sustentacion_HolaModa_Moderna.pptx)
 - [Origen y límites de los datos](data/README.md)
 - [Bibliotecas locales](static/vendor/README.md)
 

@@ -224,3 +224,6 @@ instance/
 data/raw/*.csv
 data/raw/*.zip
 *.log
+
+# Archivos temporales de Microsoft Office
+~$*

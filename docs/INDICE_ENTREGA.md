@@ -59,7 +59,7 @@ Documentos de apoyo:
 
 ## 3 Presentación técnica
 
-Presentación editable: [Sustentacion_HolaModa.pptx](Sustentacion_HolaModa.pptx).
+Presentación editable: [Sustentacion_HolaModa_Moderna.pptx](Sustentacion_HolaModa_Moderna.pptx).
 
 | Contenido solicitado | Material de revisión |
 |---|---|
